@@ -3,14 +3,17 @@ import play.PlayJava
 
 name := """circulo"""
 
-version := "1.0-SNAPSHOT"
+version := "1.0.0-SNAPSHOT"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.4"
 
 // Module settings
-val common = (project in file("modules/common"))
+lazy val common = (project in file("./common"))
 
-val http = (project in file("modules/http")).enablePlugins(PlayScala, PlayJava).settings(
-).dependsOn(common)
-
-val root = (project in file(".")).enablePlugins(PlayScala, PlayJava).aggregate(common, http)
+lazy val root = (project in file("."))
+	.enablePlugins(PlayScala, PlayJava)
+  	.settings(
+    	aggregate in update := true
+  	)
+  	.aggregate(common)
+  	.dependsOn(common)

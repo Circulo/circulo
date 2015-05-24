@@ -1,4 +1,4 @@
-name := """common"""
+name := """circulo-common"""
 
 val springVersion = "4.0.7.RELEASE"
 
