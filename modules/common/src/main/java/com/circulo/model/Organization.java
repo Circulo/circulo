@@ -3,6 +3,7 @@ package com.circulo.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
 /**
  * Created by tfulton on 5/23/15.
  */
@@ -38,5 +39,9 @@ public class Organization {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Organization getOne() {
+        return null;
     }
 }
