@@ -12,3 +12,7 @@ GET        /assets/*file               controllers.Assets.at(path="/public", fil
 GET        /todd/:id/test/:name        controllers.Application.test(id:Long, name:String)
 
 GET        /org                        @com.circulo.controllers.OrganizationController.list()
+
+POST       /org                        @com.circulo.controllers.OrganizationController.create()
+
+PUT        /org/:id                    @com.circulo.controllers.OrganizationController.update(id:String)
