@@ -1,16 +1,18 @@
 # circulo
 
+Circulo is the the start of the POS for the future.  The following will get you started.
+
 ## Follow Installation Instructions for Circulo Core
 
 View and follow install instructions for the core library [here](https://github.com/Circulo/circulo-core).
 
-### Install Activator
+## Install Activator
 
 * Download the latest activator packages [here](https://www.playframework.com/download)
 * Unpack the distribution in the directory of your choice
 * Add the activator binaries to your PATH
 
-### Run Tests (Including Dependency Tests)
+## Run Tests (Including Dependency Tests)
 
 ```
 sbt update
